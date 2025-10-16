@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form Styling</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Body background */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #031934;  /* Dark background */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Page heading styling */
+        h1 {
+            text-align: center;
+            color: white;   /* Make text visible on dark background */
+            margin-top: 30px;
+        }
+
+        /* Style the form background and overall layout */
+        #contactForm {
+            background-color: #f0f8ff;      /* Light blue background */
+            width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+
+        /* Common styling for form groups */
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        /* Style for all input and textarea fields using class selector */
+        .input-field {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #888;
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        /* Style for labels */
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        /* Unique style for submit button using ID selector */
+        #submitBtn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Hover effect for submit button */
+        #submitBtn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Contact Us</h1>
+
+    <!-- Contact Form -->
+    <form id="contactForm" action="#">
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" class="input-field" placeholder="Enter your name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" class="input-field" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" class="input-field" rows="5" placeholder="Type your message here..." required></textarea>
+        </div>
+
+        <input type="submit" id="submitBtn" value="Send Message">
+    </form>
+
+</body>
+</html>

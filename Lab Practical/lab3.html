@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout Lab</title>
+    <style>
+        /* General reset */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header */
+        header {
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Container for sidebar + main content */
+        .container {
+            display: flex;
+            flex-wrap: wrap; /* Allow wrapping on small screens */
+            min-height: 70vh;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            background-color: #17a2b8;
+            color: white;
+            flex: 1 1 200px; /* grow, shrink, basis */
+            padding: 20px;
+            min-width: 200px;
+        }
+
+        /* Main content */
+        .main-content {
+            background-color: #ffffff;
+            flex: 3 1 400px; /* grow, shrink, basis */
+            padding: 20px;
+            min-width: 300px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Example boxes inside sidebar and main content to show Flexbox alignment */
+        .sidebar div, .main-content div {
+            background-color: rgba(255,255,255,0.2);
+            margin-bottom: 10px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column; /* Stack sidebar and main content */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Flexbox Layout Example</h1>
+    </header>
+
+    <div class="container">
+        <aside class="sidebar">
+            <div>Sidebar Item 1</div>
+            <div>Sidebar Item 2</div>
+            <div>Sidebar Item 3</div>
+        </aside>
+
+        <main class="main-content">
+            <div>Main Content Section 1</div>
+            <div>Main Content Section 2</div>
+            <div>Main Content Section 3</div>
+        </main>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Flexbox Lab Example</p>
+    </footer>
+
+</body>
+</html>

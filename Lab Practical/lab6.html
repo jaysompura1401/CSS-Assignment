@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Post Typography Lab</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Merriweather:wght@700&display=swap" rel="stylesheet">
+
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Roboto', sans-serif; /* Body font */
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Blog Container */
+        .blog-post {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Blog Title */
+        .blog-post h1 {
+            font-family: 'Merriweather', serif; /* Heading font */
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #007bff;
+        }
+
+        /* Blog Subtitle */
+        .blog-post h2 {
+            font-family: 'Merriweather', serif;
+            font-size: 22px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        /* Blog Body */
+        .blog-post p {
+            font-size: 16px;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+
+        /* Responsive Typography */
+        @media (max-width: 768px) {
+            .blog-post {
+                padding: 20px;
+            }
+            .blog-post h1 {
+                font-size: 28px;
+            }
+            .blog-post h2 {
+                font-size: 18px;
+            }
+            .blog-post p {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .blog-post h1 {
+                font-size: 24px;
+            }
+            .blog-post h2 {
+                font-size: 16px;
+            }
+            .blog-post p {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="blog-post">
+        <h1>The Journey of Web Development</h1>
+        <h2>From HTML Basics to Advanced CSS and JavaScript</h2>
+        <p>Web development has evolved tremendously over the years. Starting with simple HTML pages, developers have moved to complex web applications using modern frameworks. The journey requires constant learning and adaptation to new technologies.</p>
+        <p>Understanding the fundamentals of HTML, CSS, and JavaScript is essential. These core technologies provide the foundation upon which advanced frameworks and libraries like React, Angular, and Vue are built.</p>
+        <p>Typography plays an important role in making content readable and visually appealing. Using the right fonts, line-height, and spacing ensures that readers can easily consume the content across all devices.</p>
+        <p>Responsive design is also crucial. A website should look great on desktops, tablets, and mobile phones. Using flexible layouts, relative units, and media queries helps achieve this goal efficiently.</p>
+    </div>
+
+</body>
+</html>
